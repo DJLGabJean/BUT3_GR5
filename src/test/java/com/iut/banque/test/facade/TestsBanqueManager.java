@@ -20,7 +20,7 @@ import com.iut.banque.facade.BanqueManager;
 /// src/com/iut/banque/test/TestsDaoHibernate-context.xml
 @ContextConfiguration("/test/resources/TestsBanqueManager-context.xml")
 @Transactional("transactionManager")
-@Ignore
+
 public class TestsBanqueManager {
 
 	@Autowired
