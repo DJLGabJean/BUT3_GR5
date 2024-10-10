@@ -104,4 +104,4 @@ https://dev.mysql.com/downloads/installer/
   
   ![287488493-8994f33e-c7c9-48f5-83a6-708025834c25](https://github.com/user-attachments/assets/278814af-06a8-4cdc-9c16-405f4004fadd)
     
-  ▪ Recréer un schéma "banquetest" et refaire les mêmes étapes ci-dessus mais avec le fichier "dumpSQL_JUnitTest"
+  ▪ Recréer un schéma "banque_test" et refaire les mêmes étapes ci-dessus mais avec le fichier "dumpSQL_JUnitTest"
