@@ -10,98 +10,109 @@
 
 • Installer la version récente de **MySQL Workbench** : https://dev.mysql.com/downloads/workbench/
 
-• Installer **mysql-connector-j-8.0.33** : https://mega.nz/file/tZJRFRia#mPZxy6UZnlx22wbhFO1UBAmFlKKLXeKaYP_lMmQdIhw
+• (Optionnel) Installer **mysql-connector-j-8.0.33** : https://mega.nz/file/tZJRFRia#mPZxy6UZnlx22wbhFO1UBAmFlKKLXeKaYP_lMmQdIhw
 
 
 
-## Configuration de la variable JAVA_HOME dans les variables d'environnement système avec le JRE
+## Configuration de la variable JAVA_HOME 
 
-![Capture d’écran 2024-10-10 141306](https://github.com/user-attachments/assets/c0674123-fcfc-40c5-a91d-d6ed1bc5448f)
+• Sélectionner variable d'environnement
 
-![Capture d’écran 2024-10-10 141527](https://github.com/user-attachments/assets/c3e2578e-494a-4a78-8e1b-bd8ff27ee257)
+![Capture d’écran 2024-10-10 161453.png](..%2F..%2F..%2F..%2FDownloads%2FCapture%20d%E2%80%99%C3%A9cran%202024-10-10%20161453.png)
+
+• Cliquer sur "nouvelle" dans la partie "variables systèmes"
+
+![Capture d’écran 2024-10-10 161556.png](..%2F..%2F..%2F..%2FDownloads%2FCapture%20d%E2%80%99%C3%A9cran%202024-10-10%20161556.png)
+
+• Nommer la variable "JAVA_HOME"
+
+• Mettez le chemin du JRE
+
+  - Cliquer sur ok
+
+![Capture d’écran 2024-10-10 161648.png](..%2F..%2F..%2F..%2FDownloads%2FCapture%20d%E2%80%99%C3%A9cran%202024-10-10%20161648.png)
+
 
 
 ## Configuration de MYSQL et de WorkBench
 
 • Télécharger la version actuelle (8.0.34) de MYSQL Installer en 331 Mo : https://dev.mysql.com/downloads/installer/
 
-  ▪ Choisir le type de Setup "Server only"
+  + Choisir le type de Setup "Server only"
  
-  ▪ Suivre les étapes par défaut
+  + Suivre les étapes par défaut
  
-  ▪ Ajouter un produit MySQL Server 8.0.x
+  + Ajouter un produit MySQL Server 8.0.x
  
-  ▪ Télécharger et installer le produit ajouté
+  + Télécharger et installer le produit ajouté
  
-  ▪ Configuration du serveur
+  + Configuration du serveur
  
-   ---> Laisser le port à 3306
+    - Laisser le port à 3306
   
-   ![287487949-7dde225f-04bb-46f3-ba13-15e2763937d0](https://github.com/user-attachments/assets/5b21691e-9a50-483d-8192-de17ff8e27c9)
+    ![287487949-7dde225f-04bb-46f3-ba13-15e2763937d0](https://github.com/user-attachments/assets/5b21691e-9a50-483d-8192-de17ff8e27c9)
    
+    - Choisir un mot de passe pour l'user "root"
 
-   ---> Choisir un mot de passe pour l'user "root"
+    ![287488027-dfdd1b83-5440-4128-b049-412e33f995d3](https://github.com/user-attachments/assets/64df5731-226b-4090-81c8-e4113da3de77)
 
+    - (Optionnel) Créer un utilisateur en appuyant sur le bouton "add user"
   
-   ![287488027-dfdd1b83-5440-4128-b049-412e33f995d3](https://github.com/user-attachments/assets/64df5731-226b-4090-81c8-e4113da3de77)
+      ![287488586-f68c01a9-fcee-48e0-94ea-630462310d6b](https://github.com/user-attachments/assets/bf905570-2587-4353-9eea-0b02920b98c9)
 
-   ---> (Optionnel) Créer un utilisateur en appuyant sur le bouton "add user"
+      * Choisir le username
   
-   ![287488586-f68c01a9-fcee-48e0-94ea-630462310d6b](https://github.com/user-attachments/assets/bf905570-2587-4353-9eea-0b02920b98c9)
-
-   ---> Choisir le username
+      * Host = localhost
   
-   ---> Host = localhost
+      * Choisir le mot de passe et le confirmer
   
-   ---> Choisir le mot de passe et le confirmer
+      * Cliquer sur le bouton "ok" pour confirmer
   
-   ---> Cliquer sur le bouton "ok" pour confirmer
-  
-   ---> Choisir les options par défauts pour le reste de la configuration
+      * Choisir les options par défauts pour le reste de la configuration
    
-   ![287488062-337d5c99-bc0a-49ce-8b47-2989e924e504](https://github.com/user-attachments/assets/7157b718-271d-4627-8bd2-f1d91b79a3ec)
+      ![287488062-337d5c99-bc0a-49ce-8b47-2989e924e504](https://github.com/user-attachments/assets/7157b718-271d-4627-8bd2-f1d91b79a3ec)
 
 
 • Connexion à la BDD depuis MySQL Workbench
 
-  ▪ Créer une connexion MySQL
+  + Créer une connexion MySQL
   
-  ▪ Ajoutez les identifiants
+  + Ajoutez les identifiants
   
-   ---> Connection Name -> Nommer la connexion
+    - Connection Name -> Nommer la connexion
   
-   ---> Hostname = localhost
+    - Hostname = localhost
   
-   ---> Port -> seulement le changer si le port par défaut du serveur MySQL (3306) a été modifié pendant l'installation
+    - Port -> seulement le changer si le port par défaut du serveur MySQL (3306) a été modifié pendant l'installation
   
-   ---> Username
+    - Username
   
-   ---> Password -> store in vault -> taper le mot de passe de l'utilisateur
+    - Password -> store in vault -> taper le mot de passe de l'utilisateur
   
-   ---> (Optionel) Tester la connection avec le bouton "Test Connection"
+    - (Optionnel) Tester la connection avec le bouton "Test Connection"
   
-   ---> Appuyer sur le bouton "ok" pour confirmer
+    - Appuyer sur le bouton "ok" pour confirmer
   
-   ![287488152-7737f7f7-c99b-430c-a5dc-5fa66fd6dd05](https://github.com/user-attachments/assets/15a4e071-8201-4b09-80b8-78f5259b09f3)
+    ![287488152-7737f7f7-c99b-430c-a5dc-5fa66fd6dd05](https://github.com/user-attachments/assets/15a4e071-8201-4b09-80b8-78f5259b09f3)
 
     
-  ▪ Créer un schéma de base de données (4ème icône en haut) -> nommer la "banque" -> appuyer sur le bouton "Apply" en bas et confirmer une nouvelle fois dans l'interface qui apparaîtra
+  + Créer un schéma de base de données (4ème icône en haut) -> nommer la "banque" -> appuyer sur le bouton "Apply" en bas et confirmer une nouvelle fois dans l'interface qui apparaîtra
   
   ![287488281-6b0315bc-a8e6-4631-b95f-783180dfb72e](https://github.com/user-attachments/assets/f38638e0-3226-4194-ae5b-28516bccc24c)
 
     
-  ▪ Dans le navigateur, appuyer sur le bouton "Schemas" en bas
+  + Dans le navigateur, appuyer sur le bouton "Schemas" en bas
   
-  ▪ Double-cliquer sur le schéma de base de données ajouté (après avoir cliqué, celle-ci obtiendra une police en gras)
+  + Double-cliquer sur le schéma de base de données ajouté (après avoir cliqué, celle-ci obtiendra une police en gras)
   
   ![287488301-dd3871b8-05a6-4b00-b523-0726eec239ff](https://github.com/user-attachments/assets/ed7589d1-8ed2-4bc0-882e-5ba14e4973d2)
     
-  ▪ Ouvrir le fichier dumpSQL.sql qui est dans le dossier "scripts" du projet /projet/script/dumpSQL.sql (pour ouvrir le script, appuyer sur le deuxième bouton en haut)
+  + Ouvrir le fichier dumpSQL.sql qui est dans le dossier "scripts" du projet /projet/script/dumpSQL.sql (pour ouvrir le script, appuyer sur le deuxième bouton en haut)
   
   ![287488714-77adb28e-f1fb-454b-9858-4c4f7cacfe38](https://github.com/user-attachments/assets/7d66f70a-097f-40fc-a884-19bc67625f36)
 
-  ▪ Exécuter le script (bouton de l'éclair)
+  + Exécuter le script (bouton de l'éclair)
   
   ![287488493-8994f33e-c7c9-48f5-83a6-708025834c25](https://github.com/user-attachments/assets/278814af-06a8-4cdc-9c16-405f4004fadd)
     
-  ▪ Recréer un schéma "banque_test" et refaire les mêmes étapes ci-dessus mais avec le fichier "dumpSQL_JUnitTest"
+  + Recréer un schéma "banque_test" et refaire les mêmes étapes ci-dessus mais avec le fichier "dumpSQL_JUnitTest"
