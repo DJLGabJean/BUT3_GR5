@@ -117,3 +117,45 @@
     
   + Recréer un schéma "banque_test" et refaire les mêmes étapes ci-dessus mais avec le fichier "dumpSQL_JUnitTest"
 
+## Configuration du projet sur IntelliJ
+
+• Cliquer sur "Run" et aller dans "Edit Configurations"
+
+![Capture d’écran 2024-10-10 16149849](https://github.com/user-attachments/assets/848367e0-1109-4347-ae8e-fc55970dfb20)
+
+• Cliquer sur "+" et créer les configurations maven et tomcat
+
+![Capture d’écran 2024-10-10 165958](https://github.com/user-attachments/assets/1701ef2f-182a-4441-893c-c3ecfbacf785)
+
+• Configuration Maven (sert pour les tests)
+
+![Capture d’écran 2024-10-10 164350](https://github.com/user-attachments/assets/3d9dab50-aa30-4061-8750-dacc94983cb0)
+
+• Configuration de Tomcat (sert pour le déploiement de l'application)
+
+![Capture d’écran 2024-10-10 164449](https://github.com/user-attachments/assets/e97830b2-555d-427a-9634-ad3cb0f1cc7c)
+
+![Capture d’écran 2024-10-10 164504](https://github.com/user-attachments/assets/ac62a148-01ef-47f1-b495-2f7eae702884)
+
+• Cliquer sur l'icône de base de données
+
+![Capture d’écran 2024-10-10 165026](https://github.com/user-attachments/assets/9dc695ca-1b2a-4b2d-a038-cb83650c24f5)
+
+  - Cliquer sur "+" et créer les bases de données correspondants à la capture d'écran
+
+  ![375430910-243866ae-fa28-474a-b928-8922207b3bdc](https://github.com/user-attachments/assets/fcbe64b3-400c-460d-8bb0-bd2108bba570)
+
+  - Ayez une base de donnée appelé banque et une base de donnée appelé banque_test
+
+  ![Capture d’écran 2024-10-10 165348](https://github.com/user-attachments/assets/6b1e986c-97f3-4a09-908f-4407c2256a79)
+
+• Après avoir finaliser toutes ces configurations, lancer Tomcat
+
+![Capture d’écran 2024-10-10 165504](https://github.com/user-attachments/assets/66590d0a-94e2-47fe-b9ce-59f6d051f633)
+
+
+
+
+
+
+
