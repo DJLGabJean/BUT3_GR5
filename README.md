@@ -18,11 +18,11 @@
 
 • Sélectionner variable d'environnement
 
-![Capture d’écran 2024-10-10 161453.png](..%2F..%2F..%2F..%2FDownloads%2FCapture%20d%E2%80%99%C3%A9cran%202024-10-10%20161453.png)
+![Capture d’écran 2024-10-10 161453](https://github.com/user-attachments/assets/84c5bff7-2874-43a1-9fca-7bed31ffd7d5)
 
 • Cliquer sur "nouvelle" dans la partie "variables systèmes"
 
-![Capture d’écran 2024-10-10 161556.png](..%2F..%2F..%2F..%2FDownloads%2FCapture%20d%E2%80%99%C3%A9cran%202024-10-10%20161556.png)
+![Capture d’écran 2024-10-10 161556](https://github.com/user-attachments/assets/7a9971f5-4222-4a0a-a0e4-84c54c52eca3)
 
 • Nommer la variable "JAVA_HOME"
 
@@ -30,7 +30,7 @@
 
   - Cliquer sur ok
 
-![Capture d’écran 2024-10-10 161648.png](..%2F..%2F..%2F..%2FDownloads%2FCapture%20d%E2%80%99%C3%A9cran%202024-10-10%20161648.png)
+![Capture d’écran 2024-10-10 161648](https://github.com/user-attachments/assets/22b98d87-c6f8-420b-ab77-2c197848dd5e)
 
 
 
@@ -116,3 +116,4 @@
   ![287488493-8994f33e-c7c9-48f5-83a6-708025834c25](https://github.com/user-attachments/assets/278814af-06a8-4cdc-9c16-405f4004fadd)
     
   + Recréer un schéma "banque_test" et refaire les mêmes étapes ci-dessus mais avec le fichier "dumpSQL_JUnitTest"
+
