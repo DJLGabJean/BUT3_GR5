@@ -1,24 +1,27 @@
 # Projet de débug d'une application banque du département d'un IUT
 
-## Prérequis
+## Prérequis de téléchargement
 
 • Installer le **JRE 11.0.23** (version la plus stable) : https://mega.nz/file/1Moh1TKS#pz5OhyyG30RYulkoADggj8sWrznYTogOxA3GqCV-OKw
 
 • Installer **Tomcat 8.5.100** (version la plus stable) : https://mega.nz/file/JdBXkTTA#YmSab4hDWu2IzTHA1R63Q2d-O0sX1MibjpzDEwmbpZo
 
-• Installer la version récente de **MYSQL** : 
-https://dev.mysql.com/downloads/installer/
+• Installer la version récente de **MYSQL** : https://dev.mysql.com/downloads/installer/
+
+• Installer la version récente de **MySQL Workbench** : https://dev.mysql.com/downloads/workbench/
 
 • Installer **mysql-connector-j-8.0.33** : https://mega.nz/file/tZJRFRia#mPZxy6UZnlx22wbhFO1UBAmFlKKLXeKaYP_lMmQdIhw
 
-• Configurer la variable JAVA_HOME dans les variables d'environnement système avec le JRE
+
+
+## Configuration de la variable JAVA_HOME dans les variables d'environnement système avec le JRE
 
 ![Capture d’écran 2024-10-10 141306](https://github.com/user-attachments/assets/c0674123-fcfc-40c5-a91d-d6ed1bc5448f)
 
 ![Capture d’écran 2024-10-10 141527](https://github.com/user-attachments/assets/c3e2578e-494a-4a78-8e1b-bd8ff27ee257)
 
 
-## Configuration de MYSQL
+## Configuration de MYSQL et de WorkBench
 
 • Télécharger la version actuelle (8.0.34) de MYSQL Installer en 331 Mo : https://dev.mysql.com/downloads/installer/
 
@@ -58,9 +61,6 @@ https://dev.mysql.com/downloads/installer/
    
    ![287488062-337d5c99-bc0a-49ce-8b47-2989e924e504](https://github.com/user-attachments/assets/7157b718-271d-4627-8bd2-f1d91b79a3ec)
 
-
-
-• Télécharger la version actuelle de MySQL Workbench pour votre OS : https://dev.mysql.com/downloads/workbench/
 
 • Connexion à la BDD depuis MySQL Workbench
 
