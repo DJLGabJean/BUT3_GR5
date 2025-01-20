@@ -43,5 +43,8 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
+          DB_URL: jdbc:mysql://localhost:3306/banque_test
+          DB_USER: root
+          DB_PASSWORD: root
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=DJLGabJean_BUT3_GR5
