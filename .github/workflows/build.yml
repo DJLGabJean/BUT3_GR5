@@ -66,6 +66,5 @@ jobs:
           DB_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          echo "Setting up database schema..."
           mysql -h localhost -u ${{ secrets.MYSQL_USER }} -p${{ secrets.MYSQL_PASSWORD }} -e "CREATE DATABASE IF NOT EXISTS banque_test;"
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=DJLGabJean_BUT3_GR5
