@@ -39,7 +39,7 @@ jobs:
         run: |
           echo "Waiting for MySQL to be ready..."
           for i in {1..10}; do
-            nc -z localhost 3306 && echo "MySQL is ready" && exit 0
+            nc -z 127.0.0.1 3306 && echo "MySQL is ready" && exit 0
             echo "Waiting for MySQL..."
             sleep 5
           done
@@ -61,10 +61,10 @@ jobs:
 
       - name: Build and analyze
         env:
-          DB_URL: jdbc:mysql://localhost:3306/banque_test
+          DB_URL: jdbc:mysql://127.0.0.1:3306/banque_test
           DB_USER: ${{ secrets.MYSQL_USER }}
           DB_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          mysql -h localhost -u ${{ secrets.MYSQL_USER }} -p${{ secrets.MYSQL_PASSWORD }} -e "CREATE DATABASE IF NOT EXISTS banque_test;"
+          mysql -h 127.0.0.1 -u ${{ secrets.MYSQL_USER }} -p${{ secrets.MYSQL_PASSWORD }} -e "CREATE DATABASE IF NOT EXISTS banque_test;"
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=DJLGabJean_BUT3_GR5
